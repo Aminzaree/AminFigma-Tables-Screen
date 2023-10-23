@@ -1,0 +1,67 @@
+@media screen and (max-width: 992px){
+
+    #figma #menu{
+        text-align: center;
+    }
+
+    #figma #menu .navbar nav ul li a{
+        justify-content: center;
+    }
+
+    #figma #menu #help{
+        width: 30%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    #figma #header{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #figma #header .pages{
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    #figma #header .set{
+        width: 100%;
+        padding-top: 30px;
+    }
+
+    #figma #menu #help{
+        width: 30%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 576px){
+    #figma #menu #help{
+        width: 50%;
+    }
+
+    #figma .authorsTable table td{
+        padding: 0 20px;
+    }
+
+    #figma .projectTable table td{
+        padding: 0 10px;
+    }
+
+    .employd-content p{
+        margin-right: 15px;
+    }
+
+    #figma .projectTable .completion-content svg{
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    #figma #menu #help{
+        width: 70%;
+    }
+}

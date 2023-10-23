@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables Screen</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/grid.css">
+    <link rel="stylesheet" href="style/responsive.css">
+    <link rel="stylesheet" href="style/ResponsiveMenu.css">
+</head>
+
+<body>
+
+    <!-- Responsive Menu -->
+    <aside>
+        <span class="menuicon" id="menuicon" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </span>
+        <div id="responsiveNav">
+            <nav class="responsiveNav">
+                <ul>
+                    <li class="nav-items li-active"onclick="changeActive(this)"><a href="#"><i class="fa-solid fa-house"></i>Dashboard</a></li>
+                    <li class="nav-items" onclick="changeActive(this)"><a href="#"><i class="fa-solid fa-chart-simple"></i>Tabels</a></li>
+                    <li class="nav-items" onclick="changeActive(this)"><a href="#"><i class="fa-solid fa-credit-card"></i>Billing</a></li>
+                    <li class="nav-items" onclick="changeActive(this)"><a href="#"><i class="fa-solid fa-wrench"></i>RTL</a></li>
+                    <h3>ACCOUNT PAGES</h3>
+                    <li class="nav-items" onclick="changeActive(this)"><a href="#"><i class="fa-solid fa-user"></i>Profile</a></li>
+                    <li class="nav-items" onclick="changeActive(this)"><a href="#"><i class="fa-solid fa-file"></i>Sign In</a></li>
+                    <li class="nav-items" onclick="changeActive(this)"><a href="#"><i class="fa-solid fa-rocket"></i>Sign Up</a></li>
+                </ul>
+                <div id="help">
+                    <div class="help">
+                        <a href="#"><i class="fa-solid fa-question"></i></a>
+                        <h2>Need help?</h2>
+                        <p>Please check our docs</p>
+                        <button type="button">DOCUMENTION</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <div id="figma">
+        <!-- To Top Button -->
+        <a href="#" id="toTop">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-2">
+                    <!-- Menu -->
+                    <div id="menu">
+                        <div class="logo">
+                            <img src="img/logo-creative-tim-black.png" alt="Logo">
+                            <h1>PURITY UI DASHBOARD</h1>
+                        </div>
+                        <div class="navbar">
+                            <nav>
+                                <ul>
+                                    <li class="nav-items li-active"onclick="changeActive(this)"><a href="#"><i class="fa-solid fa-house"></i>Dashboard</a></li>
+                                    <li class="nav-items" onclick="changeActive(this)"><a href="#"><i class="fa-solid fa-chart-simple"></i>Tabels</a></li>
+                                    <li class="nav-items" onclick="changeActive(this)"><a href="#"><i class="fa-solid fa-credit-card"></i>Billing</a></li>
+                                    <li class="nav-items" onclick="changeActive(this)"><a href="#"><i class="fa-solid fa-wrench"></i>RTL</a></li>
+                                    <h3>ACCOUNT PAGES</h3>
+                                    <li class="nav-items" onclick="changeActive(this)"><a href="#"><i class="fa-solid fa-user"></i>Profile</a></li>
+                                    <li class="nav-items" onclick="changeActive(this)"><a href="#"><i class="fa-solid fa-file"></i>Sign In</a></li>
+                                    <li class="nav-items" onclick="changeActive(this)"><a href="#"><i class="fa-solid fa-rocket"></i>Sign Up</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div id="help">
+                            <div class="help">
+                                <a href="#"><i class="fa-solid fa-question"></i></a>
+                                <h2>Need help?</h2>
+                                <p>Please check our docs</p>
+                                <button type="button">DOCUMENTION</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-10">
+                    <div id="header">
+                        <div class="pages">
+                            <h3><span>Pages</span> / Tables</h3>
+                        </div>
+                        <div class="set">
+                            <div class="input-set">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <input type="search" name="search" id="search" placeholder="Type here">
+                            </div>
+                            <a href="#"><i class="fa-solid fa-user"></i>Sign In</a>
+                            <a href="#"><i class="fa-solid fa-gear"></i></a>
+                            <a href="#"><i class="fa-solid fa-bell"></i></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="authorsTable">
+                                <h2 class="authorTitle">Authors Table</h2>
+                                <table>
+                                    <tr class="tabelTitle">
+                                        <th>AUTHOR</th>
+                                        <th>FUNCTION</th>
+                                        <th>STATUS</th>
+                                        <th>EMPLOYED</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="name">
+                                            <img src="img/Image.png" alt="">
+                                            <div class="name-content">
+                                                <h3>Esthera Jackson</h3>
+                                                <p>esthera@Simmmple.co</p>
+                                            </div>
+                                        </td>
+                                        <td class="function">
+                                            <h3>Manager</h3>
+                                            <p>Organization</p>
+                                        </td>
+                                        <td class="Status">
+                                            <p class="online">Online</p>
+                                        </td>
+                                        <td class="employd">
+                                            <div class="employd-content">
+                                                <p>14/06/21</p>
+                                                <a href="#">Edit</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="name">
+                                            <img src="img/Image(1).png" alt="">
+                                            <div class="name-content">
+                                                <h3>Alexa Liras</h3>
+                                                <p>alexa@simmmple.com</p>
+                                            </div>
+                                        </td>
+                                        <td class="function">
+                                            <h3>Programmer</h3>
+                                            <p>Developer</p>
+                                        </td>
+                                        <td class="Status">
+                                            <p class="offline">offline</p>
+                                        </td>
+                                        <td class="employd">
+                                            <div class="employd-content">
+                                                <p>14/06/21</p>
+                                                <a href="#">Edit</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="name">
+                                            <img src="img/Image(2).png" alt="">
+                                            <div class="name-content">
+                                                <h3>Laurent Micheal</h3>
+                                                <p>laurent@simmmple.com</p>
+                                            </div>
+                                        </td>
+                                        <td class="function">
+                                            <h3>Executive</h3>
+                                            <p>Projects</p>
+                                        </td>
+                                        <td class="Status">
+                                            <p class="online">Online</p>
+                                        </td>
+                                        <td class="employd">
+                                            <div class="employd-content">
+                                                <p>14/06/21</p>
+                                                <a href="#">Edit</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="name">
+                                            <img src="img/Image(3).png" alt="">
+                                            <div class="name-content">
+                                                <h3>Freduardo Hill</h3>
+                                                <p>freduardo@simmmple.com</p>
+                                            </div>
+                                        </td>
+                                        <td class="function">
+                                            <h3>Programmer</h3>
+                                            <p>Developer</p>
+                                        </td>
+                                        <td class="Status">
+                                            <p class="online">Online</p>
+                                        </td>
+                                        <td class="employd">
+                                            <div class="employd-content">
+                                                <p>14/06/21</p>
+                                                <a href="#">Edit</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="name">
+                                            <img src="img/Image(4).png" alt="">
+                                            <div class="name-content">
+                                                <h3>Daniel Thomas</h3>
+                                                <p>daniel@simmmple.com</p>
+                                            </div>
+                                        </td>
+                                        <td class="function">
+                                            <h3>Designer</h3>
+                                            <p>UI/UX Design</p>
+                                        </td>
+                                        <td class="Status">
+                                            <p class="offline">Offline</p>
+                                        </td>
+                                        <td class="employd">
+                                            <div class="employd-content">
+                                                <p>14/06/21</p>
+                                                <a href="#">Edit</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="name">
+                                            <img src="img/Image(5).png" alt="">
+                                            <div class="name-content">
+                                                <h3>Mark Wilson</h3>
+                                                <p>mark@simmmple.com</p>
+                                            </div>
+                                        </td>
+                                        <td class="function">
+                                            <h3>Manager</h3>
+                                            <p>Organization</p>
+                                        </td>
+                                        <td class="Status">
+                                            <p class="offline">Offline</p>
+                                        </td>
+                                        <td class="employd">
+                                            <div class="employd-content">
+                                                <p>14/06/21</p>
+                                                <a href="#">Edit</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="projectTable">
+                                <h2 class="projectTitle">Projects</h2>
+                                <p class="project-p"><i class="fa-solid fa-circle-check"></i><span>30 done</span> this month</p>
+                                <table>
+                                    <tr class="tabelTitle">
+                                        <th>COMPANIES</th>
+                                        <th>BUDGET</th>
+                                        <th>STATUS</th>
+                                        <th>COMPLETION</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="companies">
+                                            <img src="img/Icon.png" alt="">
+                                            <h3>Chakra Soft UI Version</h3>
+                                        </td>
+                                        <td class="budget">
+                                            <h3>$14,000</h3>
+                                        </td>
+                                        <td class="projectStatus">
+                                            <h3>Working</h3>
+                                        </td>
+                                        <td class="completion">
+                                            <div class="completion-content">
+                                                <div class="progress-bar">
+                                                    <label for="progress">60%</label>
+                                                    <progress id="progress" value="60" max="100">60</progress>
+                                                </div>
+                                                <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="companies">
+                                            <img src="img/Icon(1).png" alt="">
+                                            <h3>Add Progress Track</h3>
+                                        </td>
+                                        <td class="budget">
+                                            <h3>$3,000</h3>
+                                        </td>
+                                        <td class="projectStatus">
+                                            <h3>Canceled</h3>
+                                        </td>
+                                        <td class="completion">
+                                            <div class="completion-content">
+                                                <div class="progress-bar">
+                                                    <label for="progress">10%</label>
+                                                    <progress id="progress" value="10" max="100">10</progress>
+                                                </div>
+                                                <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="companies">
+                                            <img src="img/Icon(2).png" alt="">
+                                            <h3>Fix Platform Errors</h3>
+                                        </td>
+                                        <td class="budget">
+                                            <h3>Not set</h3>
+                                        </td>
+                                        <td class="projectStatus">
+                                            <h3>Done</h3>
+                                        </td>
+                                        <td class="completion">
+                                            <div class="completion-content">
+                                                <div class="progress-bar">
+                                                    <label for="progress">100%</label>
+                                                    <progress id="progress" value="100" max="100">100</progress>
+                                                </div>
+                                                <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="companies">
+                                            <img src="img/Icon(3).png" alt="">
+                                            <h3>Lunch our Mobile App</h3>
+                                        </td>
+                                        <td class="budget">
+                                            <h3>$32,000</h3>
+                                        </td>
+                                        <td class="projectStatus">
+                                            <h3>Done</h3>
+                                        </td>
+                                        <td class="completion">
+                                            <div class="completion-content">
+                                                <div class="progress-bar">
+                                                    <label for="progress">100%</label>
+                                                    <progress id="progress" value="100" max="100">100</progress>
+                                                </div>
+                                                <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="companies">
+                                            <img src="img/Icon(4).png" alt="">
+                                            <h3>Add the New Pricing Page</h3>
+                                        </td>
+                                        <td class="budget">
+                                            <h3>$400</h3>
+                                        </td>
+                                        <td class="projectStatus">
+                                            <h3>Working</h3>
+                                        </td>
+                                        <td class="completion">
+                                            <div class="completion-content">
+                                                <div class="progress-bar">
+                                                    <label for="progress">25%</label>
+                                                    <progress id="progress" value="25" max="100">25</progress>
+                                                </div>
+                                                <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-5">
+                    <div class="copy-right">
+                        <p>@ 2021, Made with ❤️ by <a href="#">Creative Tim</a> & <a href="#">Simmmple</a> for a better web</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5">
+                    <div class="footer-menu">
+                        <ul>
+                            <li><a href="#">Creative Tim</a></li>
+                            <li><a href="#">Simmmple</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">License</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/vendor/three.r119.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/tengbao/vanta@master/dist/vanta.net.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.trunk.min.js"></script>
+    <script>
+        VANTA.NET({
+           //Add the id of your tag with the # before
+           el: "#responsiveNav",
+           //All the controles for the user
+           mouseControls: true,
+           touchControls: true,
+           gyroControls: false,
+           //Control the min-size of the animation
+           minHeight: 750.00,
+           minWidth: 200.00,
+           //Modify the sizing
+           scale: 1.00,
+           scaleMobile: 1.00,
+           //Customise the colors
+           color: 0x2d3748,
+           backgroundColor: 0X38b2ac,
+           //Customise the dots
+           points: 12.00,
+           maxDistance: 23.00,
+           spacing: 20.00
+           })
+       </script>
+</body>
+</html>
